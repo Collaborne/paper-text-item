@@ -1,0 +1,30 @@
+{
+  "name": "paper-text-item",
+  "authors": [
+    "collaborne"
+  ],
+  "description": "A Material Design text item with optional placeholder (Polymer 1.x)",
+  "main": "paper-text-item.html",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "paper",
+    "material design",
+    "item"
+  ],
+  "license": "Apache 2",
+  "homepage": "https://github.com/collaborne/paper-text-item",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
+    "web-component-tester": "*",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
