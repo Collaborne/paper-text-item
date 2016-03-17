@@ -5,7 +5,7 @@ A Material Design text item with optional placeholder (Polymer 1.x)
 
 ## Install
 
-`bower install paper-static-item`
+`bower install paper-text-item`
 
 ## License
 
