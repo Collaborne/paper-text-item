@@ -1,9 +1,20 @@
 <html>
 	<head>
-	    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+		<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+		<link rel="import" href="../paper-text-item.html">
+
+		<style is="custom-style">
+			.multiline {
+				word-wrap: break-word;
+				white-space: pre-wrap;
+			}
+		</style>
 	</head>
 
 	<body>
-		
+		<paper-text-item content="This item only has content"></paper-text-item> <br/>
+		<paper-text-item content="This item has placeholder and content but only shows content" placeholder="A placeholder"></paper-text-item> <br/>
+		<paper-text-item placeholder="This item has no content"></paper-text-item> <br/>
+		<paper-text-item class="multiline" content="This item&#13;&#10;spans on multiple&#13;&#10;lines"></paper-text-item>
 	</body>
 </html>
