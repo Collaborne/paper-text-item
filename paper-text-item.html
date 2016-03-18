@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../paper-styles/paper-styles.html">
+<link rel="import" href="../paper-styles/default-theme.html">
 
 <!--
 A text item with optional placeholder
@@ -16,6 +16,12 @@ A text item with optional placeholder
 
 	<template>
 		<style>
+			:host:not(_is-empty) {
+				color: var(--primary-text-color);
+			}
+			:host[_is-empty] {
+				color: var(--secondary-text-color);
+			}
 		</style>
 	</template>
 </dom-module>
@@ -26,7 +32,31 @@ A text item with optional placeholder
 
 	Polymer({
 		is: 'paper-text-item',
-		properties: {}
+		properties: {
+			content:{
+				type: String,
+				observer: '_onContentChanged'
+			},
+			placeholder: {
+				type: String,
+				observer: '_onPlaceholderChanged'
+			},
+			_isEmpty: {
+				type: Boolean,
+				value: true,
+				reflectToAttribute: true
+			}
+		},
+		_onContentChanged: function(content) {
+			this._isEmpty = !Boolean(content);
+			this._calcText(content, this.placeholder);
+		},
+		_onPlaceholderChanged: function(placeholder) {
+			this._calcText(this.content, placeholder);
+		},
+		_calcText(content, placeholder) {
+			this.innerHTML = content || placeholder;
+		}
 	});
 
 })();
