@@ -1,6 +1,8 @@
 _[Demo and API Docs](http://collaborne.github.io/paper-text-item)_
 
-# paper-text-item
+paper-text-item
+=========
+
 A Material Design text item with optional placeholder (Polymer 1.x)
 
 ## Install
