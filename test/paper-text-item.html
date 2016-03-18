@@ -29,8 +29,15 @@
 						element = fixture('TrivialElement');
 					});
 
-					test('always pass (Travis requires at least one test)', function() {
+					test('shows placeholder if content is empty', function() {
+						element.placeholder = 'placeholder';
+						expect(element.innerHTML).to.be.equal('placeholder');
+					});
 
+					test('shows content if content is provided', function() {
+						element.placeholder = 'placeholder';
+						element.content = 'content';
+						expect(element.innerHTML).to.be.equal('content');
 					});
 				});
 			});
