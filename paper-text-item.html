@@ -33,10 +33,16 @@ A text item with optional placeholder
 	Polymer({
 		is: 'paper-text-item',
 		properties: {
+			/**
+			 * The text that will be displayed
+			 */
 			content:{
 				type: String,
 				observer: '_onContentChanged'
 			},
+			/**
+			 * Placeholder text in case there is no content to be displayed
+			 */
 			placeholder: {
 				type: String,
 				observer: '_onPlaceholderChanged'
