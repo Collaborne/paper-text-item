@@ -1,6 +1,8 @@
 _[Demo and API Docs](http://collaborne.github.io/paper-text-item)_
 
-paper-text-item
+paper-text-item  
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/Collabornepaper-text-item)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Collabornepaper-text-item.svg)](https://vaadin.com/directory/component/Collabornepaper-text-item)
 =========
 
 A Material Design text item with optional placeholder (Polymer 1.x)
